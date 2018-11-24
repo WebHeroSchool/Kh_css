@@ -2,25 +2,26 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>LOCO</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	
-	<header class="header">
-		<div class="logo">
-			<img src="#" alt="логотип">
-		</div>
+	<div class="container">
+
+ 	<header class="header">
+		<div class="logo">loco</div>
 		<!-- /.logo -->
 
 		<div class="lang">ru</div>
 		<!-- /.lang -->
 
-		<nav class="nav">
-				<a href="#">Item1</a>
-				<a href="#">Item2</a>
-				<a href="#">Item3</a>
-		</nav>
+	<nav class="nav">
+		<div class="menu"></div>
+	</nav>
 		<!-- /.nav -->
+
 	</header>
 	<!-- /.header -->
 
@@ -28,19 +29,27 @@
 	<main class="main">
 	 	<section class="new-collection">
 
-	 		<div class="image-block">
-	 			<img src="#" alt="фото">
+	 		<div class="image-block ">
+	 			<img src="img/main-img.jpg" class="image-block_background"alt="фото">
 	 			<!-- /img -->
-	 			<div class="image-block__social">
-	 				<a><img src="#" alt="логотип" class="image-block__social-instagram"></a>
-	 				<a><img src="#" alt="логотип" class="image-block__social-vk"></a>
-	 				<a><img src="#" alt="логотип" class="image-block__social-facebook"></a>
+
+	 			<div class="image-block__social ">
+	 				<div class="image-block__social-instagram">
+	 					<a><img class="social_size-inst" src="img/instagram.png" alt="логотип"></a>
+	 					</div>
+
+					<div class="image-block__social-vk">
+	 				<a><img class="social_size-vk" src="img/vk-social-network-logo.png" alt="логотип" class="image-block__social-vk"></a>
+	 			</div>
+
+					<div class="image-block__social-fb">
+	 				<a><img class="social_size-fb" src="img/facebook.png" alt="логотип" class="image-block__social-facebook"></a>
+	 			</div>
+
+					<a class="image-block__scroll"></a>
+	 			<!-- /.image-block__scroll -->
 	 			</div>
 	 			<!-- /.image-block__social -->
-	 			<div class="image-block__scroll">
-	 			<a><img  src="#" alt="ссылка"></a>
-	 			</div>
-	 			<!-- /.image-block__scroll -->
 	 		</div>
 	 		<!-- /.image-block -->
 
@@ -49,10 +58,11 @@
 	 			<!-- /.description-block__title -->
 	 			<p class="description-block__subtitle">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
 	 			<!-- /.description-block__subtitle -->
-	 			<button class="description-block__btn">ЧИТАТЬ ДАЛЬШЕ</button>
+	 			<button class="description-block__btn btn_text">ЧИТАТЬ ДАЛЬШЕ</button>
 	 			<!-- /.second-block__button -->
 	 			<div class="description-block__arrow">
-	 				<a href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+	 				<a href="#" class="arrow_style">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+	 				<img src="img/arrow.svg" alt="arrow">
 	 			</div>
 	 			<!-- /.description-block__arrow -->
 	 		</div>
@@ -136,19 +146,44 @@
 		 		<a href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
 		 	</div>
 	 		<!-- /.description-block__arrow -->
-		</div>
+			</div>
 		<!-- /.description-block -->
-	</section>
+		</section>
 	<!-- /.looK -->
-
 	</main>
 	<!-- /.main --> 
 
-<footer class="footer">
-	<div class="copyrights">РАЗРАБОТАНО В</div>
-	<!-- /.copyrights -->
-</footer>
-<!-- /.footer -->
+	<footer class="footer">
+		<div class="copyrights">РАЗРАБОТАНО В</div>
+		<!-- /.copyrights -->
+	</footer>
+	<!-- /.footer -->
+
+</div>
+	<!-- /.container -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<script>
+(function($){
+  $(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu')
+        .toggleClass('menu_state_open');
+    });
+    
+    $('.menu__links-item').on('click', function() {
+      // do something
+
+      $(this).closest('.menu')
+        .removeClass('menu_state_open');
+    });
+  });
+})(jQuery);
+</script>
 
 </body>
 </html>
