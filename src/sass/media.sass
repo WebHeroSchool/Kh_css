@@ -1,0 +1,210 @@
+@media screen and (max-width: 1199px)
+	html, body 
+		header
+		 max-width: 100%
+   max-height: 700px
+			&::before 
+				width: 392px 
+				height: 700px
+		.container 
+			width: 90%
+		.header
+			&__image
+				margin-right: 20px
+
+			&__left 
+				width: 28%
+			&__text 
+				&-title 
+					line-height: 62px
+    	font-size: 62px
+    &-descr 
+    	font-size: 14px
+				&-bottom
+    	width: 80%
+
+
+
+
+
+
+
+
+		.hidden 
+			width: 365px
+
+@media screen and (max-width: 991px)
+	html, body 
+		header 
+			&::before 
+				display: none
+		.container 
+			max-width: 100%
+			overflow: hidden
+		.header 
+			&__image 
+			
+			&__content 
+				flex-direction: column
+			&__left 
+			 width: 24%
+			&__mouse
+				// display: none 
+			 margin-top: 74px
+			 width: 24px
+    height: 37px
+			&__logo, &__lang
+				color: #000
+			&__lang::after 
+				border: 1px solid #000
+				border-top: #fff
+    border-left: #fff
+   &__text 
+   	&-title 
+   		padding-top: 35px
+   		font-size: 50px
+   	&-descr 
+   		text-align-last: center
+    	text-align: justify
+
+@media screen and (max-width: 768px)
+	html, body 
+		header
+			background: url(../img/main-mob.jpg) no-repeat center top
+			background-size: cover
+			width: 100%
+			height: 100vh
+			margin-top: 69px
+			position: relative
+			&::before 
+				display: none
+		.container
+			max-width: 90%
+			overflow: hidden
+		.header
+			&__menu 
+				width: 70px
+				height: 69px
+				top: -69px
+				&::after, &::before 
+				 width: 26.4px
+    	height: 2px
+    	margin-left: -13.5px
+			&__logo 
+				color: #000
+				position: absolute
+				top: -50px
+				left: 10%
+    transform: translateX(-10%)
+			&__lang 
+				display: none
+			&__mouse 
+				display: none
+			&__social
+				display: none
+			&__content
+				padding-top: 26px
+				align-items: flex-start 
+				flex-direction: column
+			&__text 
+				width: 320px
+				&-title 
+					display: block
+	    position: absolute
+	    bottom: 62px
+	    left: 50%
+    	line-height: 51px
+					font-size: 50px
+	    transform: translateX(-50%);
+				&-descr, &-bottom
+					display: none
+		.hidden 
+			display: none
+		.mobile__arrow
+			&::before
+				content: ''
+				display: block 
+				position: absolute
+				border: 3px solid #020202
+				width: 14px
+				height: 14px
+				transform: rotate(45deg)
+				transform: rotate(45deg)
+    border-top: #fff
+    border-left: #fff
+    bottom: 21px
+    left: 50%
+    cursor: pointer
+
+@media screen and (max-width: 576px)
+	html, body 
+		header
+			background: url(../img/main-mob.jpg) no-repeat center top
+			background-size: cover
+			width: 100%
+			height: 100vh
+			margin-top: 69px
+			position: relative
+			&::before 
+				display: none
+		.container
+			max-width: 90%
+			overflow: hidden
+		.header
+			&__menu 
+				width: 70px
+				height: 69px
+				top: -69px
+				&::after, &::before 
+				 width: 26.4px
+    	height: 2px
+    	margin-left: -13.5px
+			&__logo 
+				color: #000
+				position: absolute
+				top: -50px
+				left: 10%
+    transform: translateX(-10%)
+			&__lang 
+				display: none
+			&__mouse 
+				display: none
+			&__social
+				display: none
+			&__content
+				padding-top: 26px
+				align-items: flex-start 
+				flex-direction: column
+			&__text 
+				width: 320px
+				&-title 
+					display: block
+	    position: absolute
+	    bottom: 62px
+	    left: 50%
+    	line-height: 51px
+					font-size: 50px
+	    transform: translateX(-50%);
+				&-descr, &-bottom
+					display: none
+		.hidden 
+			display: none
+		.mobile__arrow
+			&::before
+				content: ''
+				display: block 
+				position: absolute
+				border: 3px solid #020202
+				width: 14px
+				height: 14px
+				transform: rotate(45deg)
+				transform: rotate(45deg)
+    border-top: #fff
+    border-left: #fff
+    bottom: 21px
+    left: 50%
+    cursor: pointer
+
+
+
+

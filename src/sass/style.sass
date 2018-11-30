@@ -18,13 +18,13 @@ body
 header
 	width: 100%
 	height: 900px
-	position: relative 
+	// position: relative 
 	&::before 
 		content: ''
 		position: absolute
 		display: block
 		background: #000
-		height: 100%
+		height: 900px;
 		width: 460px
 		left: 0
 		top: 0
@@ -34,14 +34,16 @@ header
 		justify-content: space-between
 		width: 95%
 		margin: 0 auto
-		&-left 
+		&__image 
+			background: url(../img/main-img.jpg)
+		&__left 
 			display: flex
 			justify-content: space-between
 			padding-top: 36px
 			width: 340px
 			height: 30px
 			align-items: center 
-		&-logo
+		&__logo
 			position: relative 
 			font-family: Montserrat, sans-serif
 			font-weight: 500
@@ -51,9 +53,9 @@ header
 			letter-spacing: 0.07em
 			color: #fff
 			text-transform: uppercase
-		&-lang 
+		&__lang 
 			position: relative 
-			font-family: Montserrat
+			font-family: Montserrat, sans-serif
 			font-style: normal
 			font-weight: 500
 			font-size: 20px
@@ -73,7 +75,7 @@ header
 		  -ms-transform: rotate(45deg);
 		  transform: rotate(45deg);
 		  cursor: pointer;
-		&-menu
+		&__menu
 		 position: absolute 
 			height: 92px
 			width: 92px
@@ -101,37 +103,37 @@ header
 				background: #000 
 
 .header 
-		&-content 
+		&__content 
 			display: flex 
 			align-items: center 
 			justify-content: space-between
 			padding-top: 100px
 			width: 100%
 			margin: 0 auto
-		&-text
+		&__text
 			width: 491px
-			&__title 
+			&-title 
 				margin: 0
-				font-family: Montserrat, sans-serif;
+				font-family: Montserrat, sans-serif
 				font-style: normal;
 				font-weight: bold;
 				line-height: 82px;
 				font-size: 80px;
 				color: #000000;
-			&__descr 
+			&-descr 
 				padding-top: 22px
-				font-family: Montserrat;
+				font-family: Montserrat, sans-serif
 				font-style: normal;
 				line-height: 21px;
 				font-size: 15px;
 				color: #000000;
-			&__bottom 
+			&-bottom 
 				display: flex 
 				justify-content: space-between
 				align-items: center
 				padding-top: 36px
 				width: 88%
-			&__offer 
+			&-offer 
 				position: relative
 				font-family: Montserrat, sans-serif;
 				font-style: normal;
@@ -146,13 +148,13 @@ header
 					bottom: -4px
 
 .header
-		&-social
+		&__social
 			padding-top: 85px 
 			margin-left: 2.5%
-			display: flex
+			display: inline-flex
 			justify-content: space-between
-			width: 680px
-			&__links 
+			width: 480px
+			&-links 
 				display: flex
 				width: 135px
 				justify-content: space-between
@@ -164,23 +166,28 @@ header
 					height: 41px
 					border-radius: 50%
 					background: #fff
-			&__mouse 
-				width: 27px;
-		  height: 46px;
-		  border: 2px solid black;
-		  -webkit-border-radius: 15px;
-		  border-radius: 15px;
-		  margin-left: 502px;
-		  position: relative;
-		  &::after 
-		  	content: '';
-			  position: absolute;
-			  width: 2.5px;
-			  height: 8px;
-			  background: #000;
-			  left: 50%;
-			  margin-left: -1.25px;
-			  top: 10px;
+		&__mouse 
+			width: 27px
+		 height: 46px
+		 border: 2px solid black
+		 -webkit-border-radius: 15px
+		 border-radius: 15px
+		 // margin-left: 516px
+		 left: 49%
+		 position: absolute 
+		 transform: translateX(-49%)
+   // bottom: 39px
+   margin-top: 74px
+		 &::before
+		 	display: block
+		  content: ''
+			 position: absolute
+			 width: 2.5px
+			 height: 8px
+			 background: #000
+			 left: 50%
+			 margin-left: -1.25px
+			 top: 10px
 
 
 
