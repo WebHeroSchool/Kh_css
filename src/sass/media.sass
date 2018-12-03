@@ -4,16 +4,21 @@
 		 max-width: 100%
    max-height: 700px
 			&::before 
-				width: 392px 
+				width: 31% 
 				height: 700px
 		.container 
 			width: 90%
-		.header
+		.header 
+			&__left
+				width: 25%
+		.collection 
+			&__content 
+				justify-content: left
+				width: 90%
 			&__image
 				margin-right: 20px
-
 			&__left 
-				width: 28%
+				width: 25%
 			&__text 
 				&-title 
 					line-height: 62px
@@ -21,17 +26,10 @@
     &-descr 
     	font-size: 14px
 				&-bottom
-    	width: 80%
-
-
-
-
-
-
-
-
+    	width: 90%
 		.hidden 
 			width: 365px
+
 
 @media screen and (max-width: 991px)
 	html, body 
@@ -41,9 +39,15 @@
 		.container 
 			max-width: 100%
 			overflow: hidden
-		.header 
+		.header
+			&__logo, &__lang
+				color: #000
+			&__lang::after 
+				border: 1px solid #000
+				border-top: #fff
+    border-left: #fff
+		.collection  
 			&__image 
-			
 			&__content 
 				flex-direction: column
 			&__left 
@@ -53,12 +57,6 @@
 			 margin-top: 74px
 			 width: 24px
     height: 37px
-			&__logo, &__lang
-				color: #000
-			&__lang::after 
-				border: 1px solid #000
-				border-top: #fff
-    border-left: #fff
    &__text 
    	&-title 
    		padding-top: 35px
@@ -66,6 +64,7 @@
    	&-descr 
    		text-align-last: center
     	text-align: justify
+
 
 @media screen and (max-width: 768px)
 	html, body 
@@ -81,7 +80,7 @@
 		.container
 			max-width: 90%
 			overflow: hidden
-		.header
+		.header 
 			&__menu 
 				width: 70px
 				height: 69px
@@ -98,12 +97,14 @@
     transform: translateX(-10%)
 			&__lang 
 				display: none
+		.collection 
 			&__mouse 
 				display: none
 			&__social
 				display: none
 			&__content
 				padding-top: 26px
+				margin-top: -26px
 				align-items: flex-start 
 				flex-direction: column
 			&__text 
@@ -111,10 +112,10 @@
 				&-title 
 					display: block
 	    position: absolute
-	    bottom: 62px
+	    bottom: 0
 	    left: 50%
     	line-height: 51px
-					font-size: 50px
+					font-size: 69px
 	    transform: translateX(-50%);
 				&-descr, &-bottom
 					display: none
@@ -132,14 +133,14 @@
 				transform: rotate(45deg)
     border-top: #fff
     border-left: #fff
-    bottom: 21px
+    bottom: -36px
     left: 50%
     cursor: pointer
+
 
 @media screen and (max-width: 576px)
 	html, body 
 		header
-			background: url(../img/main-mob.jpg) no-repeat center top
 			background-size: cover
 			width: 100%
 			height: 100vh
@@ -147,10 +148,12 @@
 			position: relative
 			&::before 
 				display: none
+		main
+			background: url(../img/main-mob.jpg) no-repeat center top
 		.container
 			max-width: 90%
 			overflow: hidden
-		.header
+		.header 
 			&__menu 
 				width: 70px
 				height: 69px
@@ -167,6 +170,7 @@
     transform: translateX(-10%)
 			&__lang 
 				display: none
+		.collection 
 			&__mouse 
 				display: none
 			&__social
@@ -175,12 +179,13 @@
 				padding-top: 26px
 				align-items: flex-start 
 				flex-direction: column
+				margin-top: -26px
 			&__text 
 				width: 320px
 				&-title 
 					display: block
 	    position: absolute
-	    bottom: 62px
+	    bottom: 0
 	    left: 50%
     	line-height: 51px
 					font-size: 50px
@@ -201,7 +206,7 @@
 				transform: rotate(45deg)
     border-top: #fff
     border-left: #fff
-    bottom: 21px
+    bottom: -36px
     left: 50%
     cursor: pointer
 
