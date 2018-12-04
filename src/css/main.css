@@ -21,6 +21,11 @@
     width: 25%;
   }
 
+  html .collection__social,
+  body .collection__social {
+    margin-left: 2.5%;
+  }
+
   html .collection__content,
   body .collection__content {
     -webkit-box-pack: left;
