@@ -1,0 +1,5 @@
+node_modules/
+gulpfile.js
+now.json
+package.json
+package-lock.json
