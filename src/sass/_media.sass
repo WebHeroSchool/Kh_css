@@ -1,0 +1,66 @@
+@media only screen and (max-width: 320px)
+	header
+		&::before 
+			display: none
+	main
+		background: url(../img/main-mob.jpg) no-repeat center top
+	.container
+		max-width: 90%
+		overflow: hidden
+	.header 
+		&__menu 
+			width: 70px
+			height: 69px
+			top: -69px
+			&::after, &::before 
+				width: 26.4px
+    height: 2px
+    margin-left: -13.5px
+		&__logo 
+			color: #000
+			position: absolute
+			top: -50px
+			left: 10%
+   transform: translateX(-10%)
+		&__lang 
+			display: none
+	.collection 
+		&__mouse 
+			display: none
+		&__social
+			display: none
+		&__content
+			padding-top: 26px
+			align-items: flex-start 
+			flex-direction: column
+			margin-top: -26px
+		&__text 
+			width: 320px
+			&-title 
+				display: block
+	   position: absolute
+	   bottom: 0
+	   left: 50%
+    line-height: 51px
+				font-size: 50px
+	   transform: translateX(-50%)
+			&-descr, &-bottom, &-btn
+				display: none
+	.hidden 
+		display: none
+	.mobile__arrow
+		&::before
+			content: ''
+			display: block 
+			position: absolute
+			border: 3px solid #020202
+			width: 14px
+			height: 14px
+			transform: rotate(45deg)
+			transform: rotate(45deg)
+   border-top: #fff
+   border-left: #fff
+   bottom: -36px
+   left: 50%
+   cursor: pointer
+
