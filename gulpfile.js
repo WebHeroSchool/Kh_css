@@ -47,3 +47,4 @@ gulp.task( 'deploy', function () {
 		.pipe( conn.dest( '/www/kharlamova-23.ru' ) );
 
 });
+
