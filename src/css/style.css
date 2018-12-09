@@ -196,8 +196,13 @@ header {
     align-items: center;
     justify-content: space-between; }
   .bag__image {
-    padding-top: 116px;
-    width: 582px; }
+    top: 69px;
+    width: 582px;
+    height: 524px;
+    background: url(../img/bag-img1.png) no-repeat;
+    position: relative;
+    left: -49px;
+    background-size: contain; }
   .bag__description {
     margin-top: 167px;
     position: relative;
@@ -212,7 +217,7 @@ header {
       top: 72px;
       left: 49px;
       z-index: -1;
-      filter: blur(10px); }
+      filter: blur(21px); }
   .bag__card {
     margin-bottom: 39px;
     padding: 40px 0 0 55px;
@@ -249,7 +254,8 @@ header {
   .card__colors {
     display: inline-block;
     padding: 0 69px 46px 0;
-    vertical-align: middle; }
+    vertical-align: middle;
+    cursor: pointer; }
   .card__price {
     display: inline-block;
     padding-bottom: 46px;

@@ -125,7 +125,60 @@
     border-left: #fff;
     bottom: -36px;
     left: 50%;
-    cursor: pointer; } }
+    cursor: pointer; }
+  .bag__wrap {
+    margin-top: 0; }
+  .bag__content {
+    flex-direction: column; }
+  .bag__image {
+    position: relative;
+    height: 200px;
+    top: 53px;
+    left: 1px;
+    transform: translateX(1px);
+    background: url(../img/bag-mob.png) center no-repeat; }
+  .bag__description {
+    margin-top: 70px; }
+  .bag__card {
+    padding: 16px 0 0 63px;
+    width: 320px;
+    height: 281px; }
+  .bag__description::after {
+    display: none; }
+  .card__title {
+    padding: 0 0 2px 10px;
+    line-height: 20px;
+    font-size: 20px; }
+  .card__subtitle {
+    padding: 0 0 16px 10px;
+    line-height: 10px;
+    font-size: 10px;
+    letter-spacing: 0.07em; }
+  .card__text {
+    padding: 0 0 12px 10px;
+    width: 237px;
+    line-height: 13px;
+    font-size: 9px; }
+  .card__price {
+    padding-bottom: 35px;
+    line-height: 28px;
+    font-size: 20px; }
+  .card__colors {
+    padding: 0 44px 25px 10px; }
+  .card__counter {
+    display: none; }
+  .card__btn {
+    height: 37px; }
+  .card__arrow {
+    display: none; }
+  .size {
+    height: 24px;
+    width: 22px; }
+  .space {
+    padding-right: 2px; }
+  .btn_text {
+    line-height: 0px;
+    font-size: 13px; } }
 
 @media only screen and (max-width: 320px) {
   header {
@@ -188,4 +241,57 @@
     border-left: #fff;
     bottom: -36px;
     left: 50%;
-    cursor: pointer; } }
+    cursor: pointer; }
+  .bag__wrap {
+    margin-top: 0; }
+  .bag__content {
+    flex-direction: column; }
+  .bag__image {
+    position: relative;
+    height: 200px;
+    top: 53px;
+    left: 1px;
+    transform: translateX(1px);
+    background: url(../img/bag-mob.png) center no-repeat; }
+  .bag__description {
+    margin-top: 70px; }
+  .bag__card {
+    padding: 16px 0 0 63px;
+    width: 320px;
+    height: 281px; }
+  .bag__description::after {
+    display: none; }
+  .card__title {
+    padding: 0 0 2px 10px;
+    line-height: 20px;
+    font-size: 20px; }
+  .card__subtitle {
+    padding: 0 0 16px 10px;
+    line-height: 10px;
+    font-size: 10px;
+    letter-spacing: 0.07em; }
+  .card__text {
+    padding: 0 0 12px 10px;
+    width: 237px;
+    line-height: 13px;
+    font-size: 9px; }
+  .card__price {
+    padding-bottom: 35px;
+    line-height: 28px;
+    font-size: 20px; }
+  .card__colors {
+    padding: 0 44px 25px 10px; }
+  .card__counter {
+    display: none; }
+  .card__btn {
+    height: 37px; }
+  .card__arrow {
+    display: none; }
+  .size {
+    height: 24px;
+    width: 22px; }
+  .space {
+    padding-right: 2px; }
+  .btn_text {
+    line-height: 0px;
+    font-size: 13px; } }
