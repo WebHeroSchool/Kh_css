@@ -191,11 +191,150 @@ header
 			 top: 10px
 
 .bag 
+	font-family: Montserrat, sans-serif
+	&__wrap
+	 margin-top: 42px
+		background: #fae8e4
+	&__content 
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__image
+		padding-top: 116px
+		width: 582px	
+	&__description
+		margin-top: 167px
+		position: relative
+		z-index: 3
+		&::after 
+   content: ''
+   position: absolute
+   background: #d1c2bf
+   opacity: .8
+			height: 490px
+   width: 450px
+   top: 72px
+   left: 49px
+   z-index: -1
+   filter: blur(10px)
+
+	&__card 
+		margin-bottom: 39px
+		padding: 40px 0 0 55px
+		width: 433px
+		height: 512px
+		background: #fff
+
+.card 
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	&__title 
+		margin: 0
+		padding-bottom: 17px
+		line-height: 41px
+		font-size: 40px
+		font-weight: bold
+		color: #000000
+	&__subtitle 
+		padding-bottom: 64px
+		line-height: 16px
+		font-size: 16px
+		font-weight: bold
+		letter-spacing: 0.07em
+		color: #000000
+		opacity: 0.5
+	&__text 
+		padding-bottom: 52px
+		width: 368px
+		font-weight: normal
+		line-height: 21px
+		font-size: 15px
+		color: #000000
+		opacity: 0.5
+	&__colors 
+		display: inline-block
+	 padding: 0 69px 46px 0
+		vertical-align: middle
+	&__price 
+		display: inline-block
+		padding-bottom: 46px
+		line-height: 56px
+		font-weight: bold
+		font-size: 40px
+		vertical-align: -webkit-baseline-middle
+		color: #000000
+	&__number 
+		width: 373px
+		display: flex
+  justify-content: space-between
+	&__counter 
+		display: inline-block
+	 width: 100px
+	 height: 44px
+	 border: 1.5px solid #000000
+		box-sizing: border-box
+	 button 
+	  border: none
+   background: #fff
+   outline: none 
+   cursor: pointer
+  span 
+  	padding: 0 10px 0 10px
+ &__btn 
+	 width: 253px
+		height: 44px
+		vertical-align: top
+		background: #fff
+		border: 1.5px solid #000000;
+		box-sizing: border-box;
+		outline: none 
+		cursor: pointer
+	&__arrow 
+		padding-bottom: 125px
+		position: relative
+		&::after 
+			content: url('../img/arrow-2.svg')
+			position: absolute
+			height: 2px
+			width: 100px
+			right: 143px
+		&_style
+			font-family: Montserrat, sans-serif
+			font-weight: 500
+			line-height: normal
+			font-size: 13px
+			text-decoration: none 
+			color: #000000
+
+
+
+
+		
+	
+.space 
+	padding-right: 12px
+	&:last-child
+		padding-right: 0
+.counter_wrap
+	width: 68px
+	padding: 11px 15px
+.btn_text
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	font-weight: 500
+	line-height: 0px
+	font-size: 13px
+	color: #000000
+	text-transform: uppercase
+.size
+	width: 582px
+.shadow
+	background: #e4d4d0
+	box-shadow: 0.4em 0.4em 10px rgba(0,0,0,0.5)
 	
 
 
-
-
+	// filter: blur(100px);
 // @import '_media.sass';
 
 
