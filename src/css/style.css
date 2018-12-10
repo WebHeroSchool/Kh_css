@@ -325,9 +325,6 @@ header {
   color: #000000;
   text-transform: uppercase; }
 
-.size {
-  width: 582px; }
-
 .shadow {
   background: #e4d4d0;
   box-shadow: 0.4em 0.4em 10px rgba(0, 0, 0, 0.5); }

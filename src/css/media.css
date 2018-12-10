@@ -29,7 +29,41 @@
   .collection__text-bottom {
     width: 90%; }
   .hidden {
-    max-width: 90%; } }
+    max-width: 90%; }
+  .bag__wrap {
+    margin-top: 32px; }
+  .bag__description::after {
+    top: 23px;
+    left: -7px; }
+  .bag__content {
+    justify-content: space-around; }
+  .bag__image {
+    top: 89px;
+    left: 21px;
+    width: 400px; }
+  .bag__card {
+    margin-bottom: 39px;
+    padding: 25px 0 0 36px;
+    width: 389px;
+    height: 471px; }
+  .card__title {
+    margin: 0;
+    padding-bottom: 17px;
+    font-size: 36px; }
+  .card__subtitle {
+    padding-bottom: 47px; }
+  .card__text {
+    padding-bottom: 37px;
+    width: 368px; }
+  .card__colors {
+    padding: 0 69px 46px 0; }
+  .card__price {
+    padding-bottom: 37px;
+    font-size: 35px; }
+  .card__number {
+    width: 369px; }
+  .card__arrow::after {
+    display: none; } }
 
 @media screen and (max-width: 991px) {
   header::before {
@@ -58,7 +92,15 @@
     font-size: 50px; }
   .collection__text-descr {
     text-align-last: center;
-    text-align: justify; } }
+    text-align: justify; }
+  .bag__content {
+    flex-direction: column; }
+  .bag__image {
+    top: 90px;
+    left: 5px;
+    height: 400px; }
+  .bag__description {
+    margin-top: 100px; } }
 
 @media screen and (max-width: 768px) {
   header {
@@ -132,45 +174,56 @@
     flex-direction: column; }
   .bag__image {
     position: relative;
-    height: 200px;
-    top: 53px;
-    left: 1px;
+    height: 274px;
+    width: 294px;
+    top: 45px;
+    left: 0px;
     transform: translateX(1px);
-    background: url(../img/bag-mob.png) center no-repeat; }
+    background: url(../img/bag-mob.png) center no-repeat;
+    background-size: contain; }
   .bag__description {
     margin-top: 70px; }
   .bag__card {
-    padding: 16px 0 0 63px;
+    padding: 0;
     width: 320px;
     height: 281px; }
   .bag__description::after {
     display: none; }
   .card__title {
-    padding: 0 0 2px 10px;
+    padding: 22px 0 2px 11px;
     line-height: 20px;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   .card__subtitle {
     padding: 0 0 16px 10px;
     line-height: 10px;
     font-size: 10px;
-    letter-spacing: 0.07em; }
+    letter-spacing: 0.07em;
+    text-align: center; }
   .card__text {
-    padding: 0 0 12px 10px;
-    width: 237px;
+    padding: 0 0 20px 10px;
+    width: 252px;
     line-height: 13px;
-    font-size: 9px; }
+    font-size: 9px;
+    text-align: center;
+    margin: auto; }
   .card__price {
-    padding-bottom: 35px;
+    padding-bottom: 31px;
     line-height: 28px;
     font-size: 20px; }
   .card__colors {
-    padding: 0 44px 25px 10px; }
+    padding: 0 41px 23px 53px; }
   .card__counter {
     display: none; }
   .card__btn {
     height: 37px; }
   .card__arrow {
     display: none; }
+  .card__number {
+    width: 255px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto; }
   .size {
     height: 24px;
     width: 22px; }
@@ -256,7 +309,7 @@
   .bag__description {
     margin-top: 70px; }
   .bag__card {
-    padding: 16px 0 0 63px;
+    padding: 18px 0 0 63px;
     width: 320px;
     height: 281px; }
   .bag__description::after {
@@ -264,27 +317,32 @@
   .card__title {
     padding: 0 0 2px 10px;
     line-height: 20px;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: left; }
   .card__subtitle {
     padding: 0 0 16px 10px;
     line-height: 10px;
     font-size: 10px;
-    letter-spacing: 0.07em; }
+    letter-spacing: 0.07em;
+    text-align: left; }
   .card__text {
     padding: 0 0 12px 10px;
     width: 237px;
     line-height: 13px;
-    font-size: 9px; }
+    font-size: 9px;
+    text-align: left;
+    margin: 0; }
   .card__price {
     padding-bottom: 35px;
     line-height: 28px;
     font-size: 20px; }
   .card__colors {
-    padding: 0 44px 25px 10px; }
+    padding: 0 66px 25px 10px; }
   .card__counter {
     display: none; }
   .card__btn {
-    height: 37px; }
+    height: 37px;
+    margin-left: -37px; }
   .card__arrow {
     display: none; }
   .size {

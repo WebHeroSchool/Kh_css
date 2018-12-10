@@ -34,6 +34,46 @@
 	.hidden 
 		max-width: 90%
 
+
+	.bag
+		&__wrap
+			margin-top: 32px
+		&__description 
+			&::after
+	   top: 23px
+    left: -7px
+		&__content
+			justify-content: space-around 
+		&__image 
+			top: 89px
+			left: 21px
+			width: 400px
+		&__card 
+			margin-bottom: 39px
+			padding: 25px 0 0 36px
+			width: 389px
+			height: 471px
+	.card
+		&__title 
+			margin: 0
+			padding-bottom: 17px
+			font-size: 36px
+		&__subtitle 
+			padding-bottom: 47px
+		&__text 
+			padding-bottom: 37px
+			width: 368px
+		&__colors 
+			padding: 0 69px 46px 0
+		&__price 
+			padding-bottom: 37px
+			font-size: 35px
+		&__number 
+			width: 369px
+		&__arrow
+			&::after 
+				display: none
+
 @media screen and (max-width: 991px)
 	header 
 		&::before 
@@ -68,6 +108,17 @@
    &-descr 
    	text-align-last: center
     text-align: justify
+
+	.bag 
+		&__content 
+			flex-direction: column
+		&__image
+			top: 90px
+   left: 5px
+   height: 400px
+  &__description
+			margin-top: 100px
+
 
 
 @media screen and (max-width: 768px)
@@ -147,15 +198,17 @@
 			flex-direction: column
 		&__image 
 	  position: relative
-	  height: 200px
-	  top: 53px
-	  left: 1px
+	  height: 274px
+   width: 294px
+	  top: 45px
+	  left: 0px
 	  transform: translateX(1px)
 	  background: url(../img/bag-mob.png) center no-repeat
+	 	background-size: contain 
 	 &__description 
 	  margin-top: 70px
 		&__card
-			padding: 16px 0 0 63px
+			padding: 0
 	  width: 320px
 	  height: 281px
 	 &__description 
@@ -164,31 +217,40 @@
 
 	.card 
 	 &__title 
-	 	padding: 0 0 2px 10px
+	 	padding: 22px 0 2px 11px
 	 	line-height: 20px
 			font-size: 20px
+			text-align: center
 		&__subtitle 
 			padding: 0 0 16px 10px
 			line-height: 10px
 			font-size: 10px
 			letter-spacing: 0.07em
+			text-align: center
 		&__text
-			padding: 0 0 12px 10px
-			width: 237px
+			padding: 0 0 20px 10px
+			width: 252px
 			line-height: 13px
 			font-size: 9px
+			text-align: center
+			margin: auto
 		&__price 
-			padding-bottom: 35px
+			padding-bottom: 31px
 			line-height: 28px
 			font-size: 20px
 		&__colors 
-			padding: 0 44px 25px 10px
+			padding: 0 41px 23px 53px
 		&__counter 
 			display: none
 		&__btn 
 			height: 37px
 		&__arrow 
 			display: none
+		&__number 
+			width: 255px
+			display: flex
+			justify-content: space-between
+			margin: auto
 
 	.size
 		height: 24px
@@ -286,7 +348,7 @@
   &__description 
   	margin-top: 70px
 		&__card
-			padding: 16px 0 0 63px
+			padding: 18px 0 0 63px
   	width: 320px
    height: 281px
   &__description 
@@ -298,30 +360,33 @@
  		padding: 0 0 2px 10px
  	 line-height: 20px
 			font-size: 20px
+			text-align: left
 		&__subtitle 
 		 padding: 0 0 16px 10px
 			line-height: 10px
 			font-size: 10px
 			letter-spacing: 0.07em
+			text-align: left
 		&__text
 			padding: 0 0 12px 10px
 			width: 237px
 			line-height: 13px
 			font-size: 9px
+			text-align: left
+			margin: 0
 		&__price 
 			padding-bottom: 35px
 			line-height: 28px
 			font-size: 20px
 		&__colors 
-			padding: 0 44px 25px 10px
+			padding: 0 66px 25px 10px
 		&__counter 
 			display: none
 		&__btn 
 		 height: 37px
+		 margin-left: -37px
 		&__arrow 
 			display: none
-
-
 
 	.size
 		height: 24px
