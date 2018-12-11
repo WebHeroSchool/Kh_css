@@ -232,6 +232,7 @@ header {
     margin: 0;
     padding-bottom: 17px;
     line-height: 41px;
+    font-family: Montserrat, sans-serif;
     font-size: 40px;
     font-weight: bold;
     color: #000000; }
@@ -276,7 +277,6 @@ header {
     box-sizing: border-box; }
     .card__counter button {
       border: none;
-      background: #fff;
       outline: none;
       cursor: pointer; }
     .card__counter span {
@@ -328,3 +328,51 @@ header {
 .shadow {
   background: #e4d4d0;
   box-shadow: 0.4em 0.4em 10px rgba(0, 0, 0, 0.5); }
+
+.bag_btn {
+  background: #fff; }
+
+.look {
+  background: #ebe3d8; }
+  .look__image {
+    padding-top: 136px; }
+  .look__card {
+    background: #fae8e4;
+    width: 475px;
+    height: 351px; }
+
+.card__title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 41px;
+  font-size: 40px;
+  color: #000000; }
+
+.card__text {
+  max-width: 368px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 15px;
+  color: #000000;
+  opacity: 0.5; }
+
+.look_subtitle {
+  padding: 17px 0 0 47px; }
+
+.look_btn {
+  background: #fae8e4; }
+
+.look_card-number {
+  padding: 60px 0 0 47px; }
+
+.btn_style {
+  background: #fae8e4; }
+
+.look_card-title {
+  padding: 34px 0 0 47px; }
+
+.look_card-text {
+  padding: 35px 0 0 47px; }
