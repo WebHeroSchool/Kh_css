@@ -338,8 +338,21 @@ header
 
 .look 
 	background: #ebe3d8
+	background-image: linear-gradient(to left,rgb(235, 227, 216) 66.1%,rgb(22, 22, 22) 61.5%,rgb(22, 22, 22) 71.4%,rgb(235, 227, 216) 71.6%)
+	&__wrap 
+		display: flex
+		margin: 0 auto
+		// width: 1250px
+	&__description
+	 position: relative
+  top: 250px
+  left: -133px
+  height: 100%
 	&__image
-		padding-top: 136px
+		padding: 136px 0 140px 0
+		position: relative
+  left: -56px
+		max-width: 100%
 	&__card 
 		background: #fae8e4
 		width: 475px
@@ -361,11 +374,13 @@ header
 		font-size: 15px
 		color: #000000
 		opacity: 0.5
-	&__number
-		
-
-
-
+.look_arrow
+ padding: 37px 0 0 124px
+	&::after 
+		content: url('../img/arrow-3.svg')
+		right: 13px
+		bottom: 4px
+		top: 32px
 
 .look_subtitle
 	padding: 17px 0 0 47px
@@ -379,7 +394,40 @@ header
 	padding: 34px 0 0 47px
 .look_card-text
 	padding: 35px 0 0 47px
+.arrow 
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	font-weight: 500
+	line-height: normal
+	font-size: 13px
+	text-decoration: none 
+	color: #000000
 
+.footer 
+	background: #ebe3d8
+	background-image: linear-gradient(to left,rgb(235, 227, 216) 66.1%,rgb(22, 22, 22) 61.5%,rgb(22, 22, 22) 71.4%,rgb(235, 227, 216) 71.6%)
+	&__copyrights
+		font-family: Montserrat, sans-serif
+		font-style: normal
+		font-weight: bold
+		line-height: normal
+		font-size: 12px
+		color: #000000
+		text-align: end
+		position: relative
+		height: 33px
+		bottom: 4px
+		right: 100px
+		vertical-align: -webkit-baseline-middle
+		text-transform: uppercase
+		&::after 
+			content: url('../img/logo.png')
+			width: 30px
+			height: 30px
+			right: -21px
+			position: absolute 
+			bottom: 10px
+			vertical-align: -webkit-baseline-middle
 
 	// filter: blur(100px);
 // @import '_media.sass';
