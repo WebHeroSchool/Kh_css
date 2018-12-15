@@ -334,7 +334,7 @@ header {
 
 .look {
   background: #ebe3d8;
-  background-image: linear-gradient(to left, #ebe3d8 66.1%, #161616 61.5%, #161616 71.4%, #ebe3d8 71.6%); }
+  background-image: linear-gradient(to left, #ebe3d8 66.1%, #161616 66.1%, #161616 72.4%, #ebe3d8 72.6%); }
   .look__wrap {
     display: flex;
     margin: 0 auto; }
@@ -408,7 +408,7 @@ header {
 
 .footer {
   background: #ebe3d8;
-  background-image: linear-gradient(to left, #ebe3d8 66.1%, #161616 61.5%, #161616 71.4%, #ebe3d8 71.6%); }
+  background-image: linear-gradient(to left, #ebe3d8 66.1%, #161616 66.1%, #161616 72.4%, #ebe3d8 72.4%); }
   .footer__copyrights {
     font-family: Montserrat, sans-serif;
     font-style: normal;

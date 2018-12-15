@@ -76,6 +76,19 @@
 		&__arrow
 			&::after 
 				display: none
+	.look 
+		&__image
+	  left: 20px
+	  left: 4%
+	 &__description
+	  top: 203px
+   left: -6%
+  &_arrow
+  	display: block
+  &__card
+  	// width: 397px
+	.image_size
+		width: 100%
 
 @media screen and (max-width: 991px)
 	header 
@@ -146,6 +159,31 @@
    transform: translateX(-50%)
    &_style 
    	font-size: 12px
+
+ .look
+ 	&__wrap
+ 		flex-direction: column
+ 	&__description
+ 		top: -73px
+   left: 133px
+  &__card
+   height: 317px
+   width: 428px
+  &_card-text
+  	width: 306px
+		&_card-number 
+  	padding: 45px 0 0 0
+		&_arrow
+   margin-left: 40%
+   transform: translateX(-50%)
+  &__image 
+   padding: 66px 0 140px 0
+	.image_size
+			width: 600px
+		 margin: 0 auto
+   display: block
+
+
 
 
 @media screen and (max-width: 768px)
@@ -291,6 +329,71 @@
 			line-height: 0px
 			font-size: 13px
 
+	
+	.look 
+		&__wrap 
+			flex-direction: column 
+		&__image 
+			padding: 34px 0 0 0
+			max-width: 320px
+			left: auto
+		&__card 
+			width: 250px
+			height: 195px
+		&__description 
+			left: 25px
+			top: -24px
+	
+
+	.image_size
+		max-width: 320px
+	.look_card-number
+		padding: 33px 0 0 56px
+	.look_btn
+		width: 212px
+	.look_arrow
+		display: block
+  margin-top: 35px
+  padding: 0
+  margin-left: 56%
+  transform: translateX(-56%)
+  &::after 
+  	display: block 
+  	right: 31px
+ .arrow
+  font-size: 15px
+
+ .look 
+ 	&__card 
+ 		width: 290px
+ 		&__title 
+ .card
+ 	&__title 
+ 		font-size: 25px
+ 	&__subtitle
+   padding: 5px 0 0 31px
+   font-size: 12px
+  &__text 
+   font-size: 11px
+   width: 264px
+  &__number 
+   
+ .image_size   
+  max-width: 450px
+	.look_btn
+		margin-left: -7px
+	.look_card-number
+  padding: 33px 0 0 0px
+  width: 218px
+ .look_arrow
+ 	margin-top: 19px
+	 &::after 
+	 	display: none
+ 
+
+.footer 
+	display: none
+
 
 
 
@@ -431,4 +534,40 @@
 	.btn 
 		&_text 
 			line-height: 0px
-			font-size: 13px
+
+
+	.look 
+		&__wrap 
+			flex-direction: column 
+		&__image 
+			padding: 34px 0 0 0
+			max-width: 320px
+			left: auto
+		&__card 
+			width: 250px
+			height: 195px
+		&__description 
+			left: 25px
+			top: -24px
+	
+
+	.image_size
+		max-width: 320px
+	.look_card-number
+		padding: 33px 0 0 56px
+	.look_btn
+		width: 212px
+	.look_arrow
+		display: block
+  margin-top: 35px
+  padding: 0
+  margin-left: 56%
+  transform: translateX(-56%)
+  &::after 
+  	display: block 
+  	right: 31px
+ .arrow
+  font-size: 15px
+
+.footer 
+	display: none
