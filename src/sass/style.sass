@@ -258,9 +258,12 @@ header
 		color: #000000
 		opacity: 0.5
 	&__colors 
-		display: inline-block
+		display: inline-flex
+		justify-content: center
+  align-items: center
 	 padding: 48px 48px 0 55px
 		vertical-align: middle
+
 		cursor: pointer 
 	&__price 
 		display: inline-block
@@ -271,10 +274,11 @@ header
 		vertical-align: -webkit-baseline-middle
 		color: #000000
 	&__number 
-		padding: 41px 0 0 55px
+		padding: 41px 0 0 0
 		width: 373px
 		display: flex
   justify-content: space-between
+  margin: 0 auto
 	&__counter 
 		display: inline-block
 	 width: 100px
@@ -338,7 +342,7 @@ header
 
 .look 
 	background: #ebe3d8
-	background-image: linear-gradient(to left,rgb(235, 227, 216) 66.1%,rgb(22, 22, 22) 66.1%,rgb(22, 22, 22) 72.4%,rgb(235, 227, 216) 72.6%)
+	background-image: linear-gradient(to left,rgb(235, 227, 216) 66.1%,rgb(22, 22, 22) 66.1%,rgb(22, 22, 22) 72.6%,rgb(235, 227, 216) 72.6%)
 	&__wrap 
 		display: flex
 		margin: 0 auto
@@ -346,7 +350,7 @@ header
 	&__description
 	 position: relative
   top: 250px
-  left: -133px
+  left: -155px
   height: 100%
 	&__image
 		padding: 136px 0 140px 0
@@ -387,7 +391,7 @@ header
 .look_btn
 	background: #fae8e4
 .look_card-number
-	padding: 60px 0 0 47px
+	padding: 60px 0 0 0
 .btn_style
 	background: #fae8e4
 .look_card-title
@@ -402,6 +406,8 @@ header
 	font-size: 13px
 	text-decoration: none 
 	color: #000000
+.image_size
+	width: 810px
 
 .footer 
 	background: #ebe3d8

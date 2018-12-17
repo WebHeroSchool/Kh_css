@@ -339,7 +339,9 @@
   .look_arrow {
     margin-top: 19px; }
     .look_arrow::after {
-      display: none; } }
+      display: none; }
+  .space {
+    padding-right: 5px; } }
 
 .footer {
   display: none; }
@@ -465,7 +467,7 @@
       height: 29px;
       width: 27px; }
   .space {
-    padding-right: 2px; }
+    padding-right: 5px; }
   .btn_text {
     line-height: 0px; }
   .look__wrap {

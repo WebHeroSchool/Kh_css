@@ -252,7 +252,9 @@ header {
     color: #000000;
     opacity: 0.5; }
   .card__colors {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 48px 48px 0 55px;
     vertical-align: middle;
     cursor: pointer; }
@@ -265,10 +267,11 @@ header {
     vertical-align: -webkit-baseline-middle;
     color: #000000; }
   .card__number {
-    padding: 41px 0 0 55px;
+    padding: 41px 0 0 0;
     width: 373px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 auto; }
   .card__counter {
     display: inline-block;
     width: 100px;
@@ -334,14 +337,14 @@ header {
 
 .look {
   background: #ebe3d8;
-  background-image: linear-gradient(to left, #ebe3d8 66.1%, #161616 66.1%, #161616 72.4%, #ebe3d8 72.6%); }
+  background-image: linear-gradient(to left, #ebe3d8 66.1%, #161616 66.1%, #161616 72.6%, #ebe3d8 72.6%); }
   .look__wrap {
     display: flex;
     margin: 0 auto; }
   .look__description {
     position: relative;
     top: 250px;
-    left: -133px;
+    left: -155px;
     height: 100%; }
   .look__image {
     padding: 136px 0 140px 0;
@@ -386,7 +389,7 @@ header {
   background: #fae8e4; }
 
 .look_card-number {
-  padding: 60px 0 0 47px; }
+  padding: 60px 0 0 0; }
 
 .btn_style {
   background: #fae8e4; }
@@ -405,6 +408,9 @@ header {
   font-size: 13px;
   text-decoration: none;
   color: #000000; }
+
+.image_size {
+  width: 810px; }
 
 .footer {
   background: #ebe3d8;
