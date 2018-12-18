@@ -1,4 +1,4 @@
-.btn {
+.more {
   width: 203px;
   height: 44px;
   background: transparent;
@@ -139,12 +139,17 @@ header {
     font-weight: 500;
     line-height: 0px;
     font-size: 13px;
-    color: #000000; }
+    color: #000000;
+    cursor: pointer; }
     .collection__text-offer::after {
       position: absolute;
       content: url("../img/arrow.svg");
       left: 180px;
       bottom: -4px; }
+  .collection__text-more {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .collection__social {
   padding-top: 85px;
@@ -156,14 +161,14 @@ header {
     display: flex;
     width: 135px;
     justify-content: space-between; }
-    .collection__social-links a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 41px;
-      height: 41px;
-      border-radius: 50%;
-      background: #fff; }
+  .collection__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background: #fff; }
 
 .collection__mouse {
   width: 27px;
@@ -174,7 +179,8 @@ header {
   left: 49%;
   position: absolute;
   transform: translateX(-49%);
-  margin-top: 74px; }
+  margin-top: 74px;
+  cursor: pointer; }
   .collection__mouse::before {
     display: block;
     content: '';
@@ -273,17 +279,13 @@ header {
     justify-content: space-between;
     margin: 0 auto; }
   .card__counter {
-    display: inline-block;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
     height: 44px;
     border: 1.5px solid #000000;
     box-sizing: border-box; }
-    .card__counter button {
-      border: none;
-      outline: none;
-      cursor: pointer; }
-    .card__counter span {
-      padding: 0 10px 0 10px; }
   .card__btn {
     width: 253px;
     height: 44px;
@@ -333,7 +335,21 @@ header {
   box-shadow: 0.4em 0.4em 10px rgba(0, 0, 0, 0.5); }
 
 .bag_btn {
+  padding: 0;
   background: #fff; }
+
+.counter_wrap {
+  padding: 0;
+  display: flex;
+  justify-content: space-around; }
+
+.bag_span {
+  padding: 0; }
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
 
 .look {
   background: #ebe3d8;
@@ -386,7 +402,8 @@ header {
   padding: 17px 0 0 47px; }
 
 .look_btn {
-  background: #fae8e4; }
+  background: #fae8e4;
+  padding: 0; }
 
 .look_card-number {
   padding: 60px 0 0 0; }
