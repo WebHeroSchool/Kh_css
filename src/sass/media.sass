@@ -34,6 +34,62 @@
 	.hidden 
 		max-width: 90%
 
+
+	.bag
+		&__wrap
+			margin-top: 32px
+		&__description 
+			&::after
+	   height: 418px
+    width: 352px
+		&__content
+			justify-content: space-around 
+		&__image 
+			top: 89px
+			left: 21px
+			width: 400px
+		&__card 
+			margin-bottom: 39px
+			padding: 0
+			width: 389px
+			height: 471px
+	.card
+		&__title 
+			margin: 0
+			font-size: 36px
+		&__subtitle 
+	
+		&__text 
+			padding: 34px 0 0 55px
+			width: 296px
+		&__colors 
+			padding: 12px 41px 0 52px
+		&__price 
+			padding: 0
+			font-size: 35px
+		&__number 
+			width: 258px
+   padding: 28px 0 0 10px
+   margin: 0 auto
+  &__counter 
+  	display: none
+		&__arrow
+			&::after 
+				display: none
+	.look 
+		&__image
+	  left: 20px
+	  left: 4%
+	 &__description
+	  top: 203px
+   left: -6%
+  &_arrow
+  	display: block
+  &__card
+  	// width: 397px
+	.image_size
+		width: 100%
+
 @media screen and (max-width: 991px)
 	header 
 		&::before 
@@ -68,6 +124,66 @@
    &-descr 
    	text-align-last: center
     text-align: justify
+
+	.bag 
+		&__content 
+			flex-direction: column
+		&__image
+			top: 90px
+   left: 5px
+   height: 400px
+  &__description
+			margin-top: 100px
+			&::after
+				height: 400px
+    width: 371px
+		&__card
+			height: 448px
+	.card 
+		&__title 
+			padding: 16px 0 2px 31px
+		&__subtitle 
+   padding: 10px 0 0 31px
+  &__text
+   max-width: 351px
+   padding: 23px 0 0 31px
+  &__colors 
+   padding: 13px 47px 0 31px
+  &__price 
+   padding: 21px 0 0 0
+  &__number
+  	padding: 29px 0 0 0
+  &__arrow
+			padding-bottom: 50px
+   margin-left: 50%
+   transform: translateX(-50%)
+   &_style 
+   	font-size: 12px
+
+ .look
+ 	&__wrap
+ 		flex-direction: column
+ 	&__description
+ 		top: -73px
+   left: 133px
+  &__card
+   height: 317px
+   width: 428px
+  &_card-text
+  	width: 306px
+		&_card-number 
+  	padding: 45px 0 0 0
+		&_arrow
+   margin-left: 40%
+   transform: translateX(-50%)
+  &__image 
+   padding: 66px 0 140px 0
+	.image_size
+			width: 600px
+		 margin: 0 auto
+   display: block
+
+
 
 
 @media screen and (max-width: 768px)
@@ -139,6 +255,148 @@
    bottom: -36px
    left: 50%
    cursor: pointer
+	
+	.bag 
+		&__wrap 
+			margin-top: 0
+		&__content 
+			flex-direction: column
+		&__image 
+	  position: relative
+   height: 274px
+   width: 303px
+   top: 45px
+   left: 13px
+   transform: translateX(-10px)
+	  background: url(../img/bag-mob.png) center no-repeat
+	 	background-size: contain 
+	 &__description 
+	  margin-top: 70px
+		&__card
+			padding: 0
+	  width: 320px
+	  height: 281px
+	 &__description 
+	  &::after 
+	  	display: none
+
+	.card 
+ 	&__title 
+ 		padding: 16px 0 2px 31px
+ 	 line-height: 20px
+			font-size: 20px
+			text-align: left
+		&__subtitle 
+		 padding: 2px 0 0 31px
+			line-height: 10px
+			font-size: 10px
+			letter-spacing: 0.07em
+			text-align: left
+		&__text
+			padding: 16px 0 0 31px
+			width: 237px
+			line-height: 13px
+			font-size: 9px
+			text-align: left
+			margin: 0
+		&__price 
+			padding: 12px 0 0 0
+			line-height: 28px
+			font-size: 20px
+			vertical-align: top
+		&__colors 
+			padding: 13px 60px 0 31px
+		&__counter 
+			display: none
+		&__btn 
+		 height: 37px
+		 margin-left: -37px
+		&__arrow 
+			display: none
+		&__number 
+  	padding: 34px 0 0 70px
+
+	.size
+		height: 24px
+		width: 22px
+		&_mob
+			height: 29px
+			width: 27px
+	.space 
+		padding-right: 2px
+	.btn 
+		&_text 
+			line-height: 0px
+			font-size: 13px
+
+	
+	.look 
+		&__wrap 
+			flex-direction: column 
+		&__image 
+			padding: 34px 0 0 0
+			max-width: 320px
+			left: auto
+		&__card 
+			width: 250px
+			height: 195px
+		&__description 
+			left: 25px
+			top: -24px
+	
+
+	.image_size
+		max-width: 320px
+	.look_card-number
+		padding: 33px 0 0 56px
+	.look_btn
+		width: 212px
+	.look_arrow
+		display: block
+  margin-top: 35px
+  padding: 0
+  margin-left: 56%
+  transform: translateX(-56%)
+  &::after 
+  	display: block 
+  	right: 31px
+ .arrow
+  font-size: 15px
+
+ .look 
+ 	&__card 
+ 		width: 290px
+ 		&__title 
+ .card
+ 	&__title 
+ 		font-size: 25px
+ 	&__subtitle
+   padding: 5px 0 0 31px
+   font-size: 12px
+  &__text 
+   font-size: 11px
+   width: 264px
+  &__number 
+   
+ .image_size   
+  max-width: 450px
+	.look_btn
+		margin-left: -7px
+	.look_card-number
+  padding: 33px 0 0 0px
+  width: 218px
+ .look_arrow
+ 	margin-top: 19px
+	 &::after 
+	 	display: none
+ .space 
+	 padding-right: 5px
+
+
+.footer 
+	display: none
+
+
 
 
 @media only screen and (max-width: 320px)
@@ -208,3 +466,110 @@
    bottom: -36px
    left: 50%
    cursor: pointer
+	
+	.bag 
+		&__wrap 
+			margin-top: 0
+		&__content 
+			flex-direction: column
+		&__image 
+   position: relative
+   height: 200px
+   top: 53px
+   left: 1px
+   transform: translateX(1px)
+  	background: url(../img/bag-mob.png) center no-repeat
+  &__description 
+  	margin-top: 70px
+		&__card
+			// padding: 18px 0 0 63px
+  	width: 320px
+   height: 281px
+  &__description 
+  	&::after 
+  		display: none
+
+ .card 
+ 	&__title 
+ 		padding: 16px 0 2px 31px
+ 	 line-height: 20px
+			font-size: 20px
+			text-align: left
+		&__subtitle 
+		 padding: 2px 0 0 31px
+			line-height: 10px
+			font-size: 10px
+			letter-spacing: 0.07em
+			text-align: left
+		&__text
+			padding: 16px 0 0 31px
+			width: 237px
+			line-height: 13px
+			font-size: 9px
+			text-align: left
+			margin: 0
+		&__price 
+			padding: 12px 0 0 0
+			line-height: 28px
+			font-size: 20px
+			vertical-align: top
+		&__colors 
+			padding: 13px 60px 0 31px
+		&__counter 
+			display: none
+		&__btn 
+		 height: 37px
+		 margin-left: -37px
+		&__arrow 
+			display: none
+		&__number 
+  	padding: 34px 0 0 70px
+
+	.size
+		height: 24px
+		width: 22px
+		&_mob
+			height: 29px
+			width: 27px
+	.space 
+	 padding-right: 5px
+	.btn 
+		&_text 
+			line-height: 0px
+
+
+	.look 
+		&__wrap 
+			flex-direction: column 
+		&__image 
+			padding: 34px 0 0 0
+			max-width: 320px
+			left: auto
+		&__card 
+			width: 250px
+			height: 195px
+		&__description 
+			left: 25px
+			top: -24px
+	
+
+	.image_size
+		max-width: 320px
+	.look_card-number
+		padding: 33px 0 0 56px
+	.look_btn
+		width: 212px
+	.look_arrow
+		display: block
+  margin-top: 35px
+  padding: 0
+  margin-left: 56%
+  transform: translateX(-56%)
+  &::after 
+  	display: block 
+  	right: 31px
+ .arrow
+  font-size: 15px
+
+.footer 
+	display: none

@@ -1,4 +1,4 @@
-.btn 
+.more 
 	width: 203px
 	height: 44px
 	background: transparent 
@@ -141,11 +141,16 @@ header
 				line-height: 0px
 				font-size: 13px
 				color: #000000
+				cursor: pointer
 				&::after 
 					position: absolute 
 					content: url('../img/arrow.svg')
 					left: 180px
 					bottom: -4px
+			&-more
+			 display: flex
+    justify-content: center
+    align-items: center
 					
 .collection 	/*блок main соц-сети*/	
 		&__social
@@ -158,14 +163,14 @@ header
 				display: flex
 				width: 135px
 				justify-content: space-between
-				a 
-					display: flex
-					justify-content: center
-					align-items: center
-					width: 41px
-					height: 41px
-					border-radius: 50%
-					background: #fff
+			&-link 
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 41px
+				height: 41px
+				border-radius: 50%
+				background: #fff
 							
 		&__mouse /*блок main мышка*/
 			width: 27px
@@ -179,6 +184,7 @@ header
 		 transform: translateX(-49%)
    // bottom: 39px
    margin-top: 74px
+   cursor: pointer
 		 &::before
 		 	display: block
 		  content: ''
@@ -191,11 +197,261 @@ header
 			 top: 10px
 
 .bag 
-	display: none
+	font-family: Montserrat, sans-serif
+	&__wrap
+	 margin-top: 42px
+		background: #fae8e4
+	&__content 
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__image
+		top: 69px
+  width: 582px
+  height: 524px
+  background: url(../img/bag-image.png) no-repeat;
+  position: relative
+  left: -49px
+  background-size: contain
+	&__description
+		margin-top: 167px
+		position: relative
+		z-index: 3
+		&::after 
+   content: ''
+   position: absolute
+   background: #d1c2bf
+   opacity: .8
+			height: 490px
+   width: 450px
+   top: 72px
+   left: 49px
+   z-index: -1
+   filter: blur(21px)
+	&__card 
+		margin-bottom: 39px
+		// padding: 40px 0 0 55px
+		width: 488px
+		height: 556px
+		background: #fff
+
+.card 
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	&__title 
+		margin: 0
+		padding: 40px 0 0 55px
+		// padding-bottom: 17px
+		line-height: 41px
+		font-family: Montserrat, sans-serif
+		font-size: 40px
+		font-weight: bold
+		color: #000000
+	&__subtitle 
+		padding: 17px 0 0 55px
+		line-height: 16px
+		font-size: 16px
+		font-weight: bold
+		letter-spacing: 0.07em
+		color: #000000
+		opacity: 0.5
+	&__text 
+		padding: 64px 0 0 55px
+		width: 353px
+		font-weight: normal
+		line-height: 21px
+		font-size: 15px
+		color: #000000
+		opacity: 0.5
+	&__colors 
+		display: inline-flex
+		justify-content: center
+  align-items: center
+	 padding: 48px 48px 0 55px
+		vertical-align: middle
+		cursor: pointer 
+	&__price 
+		display: inline-block
+		padding: 48px 0 0 0
+		line-height: 56px
+		font-weight: bold
+		font-size: 40px
+		vertical-align: -webkit-baseline-middle
+		color: #000000
+	&__number 
+		padding: 41px 0 0 0
+		width: 373px
+		display: flex
+  justify-content: space-between
+  margin: 0 auto
+	&__counter 
+		display: flex
+		justify-content: center
+		align-items: center
+	 width: 105px
+	 height: 44px
+	 border: 1.5px solid #000000
+		box-sizing: border-box
+ &__btn 
+	 width: 253px
+		height: 44px
+		vertical-align: top
+		background: #fff
+		border: 1.5px solid #000000;
+		box-sizing: border-box;
+		outline: none 
+		cursor: pointer
+	&__arrow 
+		padding-bottom: 125px
+		position: relative
+		&::after 
+			content: url('../img/arrow-2.svg')
+			position: absolute
+			height: 2px
+			width: 100px
+			right: 143px
+		&_style
+			font-family: Montserrat, sans-serif
+			font-weight: 500
+			line-height: normal
+			font-size: 13px
+			text-decoration: none 
+			color: #000000
+	
+.space 
+	padding-right: 5px
+	&:last-child
+		padding-right: 0
+.counter_wrap
+	width: 68px
+	padding: 11px 15px
+.btn_text
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	font-weight: 500
+	line-height: 0px
+	font-size: 13px
+	color: #000000
+	text-transform: uppercase
+// .size
+// 	width: 582px
+.shadow
+	background: #e4d4d0
+	box-shadow: 0.4em 0.4em 10px rgba(0,0,0,0.5)
+.bag_btn
+	padding: 0
+	background: #fff
+.counter_wrap
+	padding: 0
+	display: flex
+	justify-content: space-around
+.bag_span
+	padding: 0
+.button 
+	border: none
+ outline: none 
+ cursor: pointer
 
 
 
 
+.look 
+	background: #ebe3d8
+	background-image: linear-gradient(to left,rgb(235, 227, 216) 66.1%,rgb(22, 22, 22) 66.1%,rgb(22, 22, 22) 72.6%,rgb(235, 227, 216) 72.6%)
+	&__wrap 
+		display: flex
+		margin: 0 auto
+		// width: 1250px
+	&__description
+	 position: relative
+  top: 250px
+  left: -155px
+  height: 100%
+	&__image
+		padding: 136px 0 140px 0
+		position: relative
+  left: -56px
+		max-width: 100%
+	&__card 
+		background: #fae8e4
+		width: 475px
+		height: 351px
+.card
+	&__title
+		font-family: Montserrat, sans-serif
+		font-style: normal
+		font-weight: bold
+		line-height: 41px
+		font-size: 40px
+		color: #000000
+	&__text 
+		max-width: 368px
+		font-family: Montserrat, sans-serif
+		font-style: normal
+		font-weight: normal
+		line-height: 21px
+		font-size: 15px
+		color: #000000
+		opacity: 0.5
+.look_arrow
+ padding: 37px 0 0 124px
+	&::after 
+		content: url('../img/arrow-3.svg')
+		right: 13px
+		bottom: 4px
+		top: 32px
+
+.look_subtitle
+	padding: 17px 0 0 47px
+.look_btn
+	background: #fae8e4
+	padding: 0
+.look_card-number
+	padding: 60px 0 0 0
+.btn_style
+	background: #fae8e4
+.look_card-title
+	padding: 34px 0 0 47px
+.look_card-text
+	padding: 35px 0 0 47px
+.arrow 
+	font-family: Montserrat, sans-serif
+	font-style: normal
+	font-weight: 500
+	line-height: normal
+	font-size: 13px
+	text-decoration: none 
+	color: #000000
+.image_size
+	width: 810px
+
+.footer 
+	background: #ebe3d8
+	background-image: linear-gradient(to left,rgb(235, 227, 216) 66.1%,rgb(22, 22, 22) 66.1%,rgb(22, 22, 22) 72.4%,rgb(235, 227, 216) 72.4%)
+	&__copyrights
+		font-family: Montserrat, sans-serif
+		font-style: normal
+		font-weight: bold
+		line-height: normal
+		font-size: 12px
+		color: #000000
+		text-align: end
+		position: relative
+		height: 33px
+		bottom: 4px
+		right: 100px
+		vertical-align: -webkit-baseline-middle
+		text-transform: uppercase
+		&::after 
+			content: url('../img/logo.png')
+			width: 30px
+			height: 30px
+			right: -21px
+			position: absolute 
+			bottom: 10px
+			vertical-align: -webkit-baseline-middle
+
+	// filter: blur(100px);
 // @import '_media.sass';
 
 
